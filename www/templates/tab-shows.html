@@ -1,0 +1,11 @@
+<ion-view view-title="TV Shows">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="show in shows" href="#/tab/shows/{{show.id}}" class="item item-avatar">
+                <img ng-src="http://ryant.duckdns.org:4001{{show.images[2].url}}">
+                <h2>{{show.title}}</h2>
+                <p>{{show.overview}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
